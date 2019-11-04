@@ -1,0 +1,5 @@
+red pin -> 9 (resist 220 ohm)
+green pin -> 10 (resist 150 ohm)
+blue pin -> 11 (resist 150 ohm)
+
+button pin -> 12

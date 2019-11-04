@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio</title>
+        <script>
+            window.onload = function(){
+                var urlParams = new URLSearchParams(location.search);
+                if(urlParams.has('anuncio')){
+                    if(urlParams.get('anuncio') == 1){
+                        window.location = '/post'
+                    }
+                    else if(urlParams.get('anuncio') == 0){
+                        window.location = '/veri'
+                    }else{
+                        window.location = '/error'
+                    }
+                }
+                img = document.createElement('IMG');
+                img.src = 'https://scontent.fsdu11-1.fna.fbcdn.net/v/t1.0-9/49135409_2026637307419807_5349928649648766976_n.jpg?_nc_cat=100&_nc_oc=AQl_PK7ZmS1rmczsiNEDaRtt2f6gz7Nkgs7c-wBeCQGjQ54FTuwLFyVx7jtNguBmFeM&_nc_ht=scontent.fsdu11-1.fna&oh=11c9c0bd9891dcecb8f7fe003c849eaf&oe=5E080850'
+                img.style.width = '500px'
+                img.style.height = '500px'
+                document.getElementById('images').appendChild(img)
+            }
+        </script>
+        <style>
+            body{
+                background-color: #cccccc;
+            }
+            #images{
+                display:flex;
+                margin-right: 300px;
+                margin-left: 300px;
+            }
+            #verificar{
+                background-color: white;
+                color: black;
+                border: 2px solid #ff0f0f;
+                margin: auto;
+                display: flex;
+                text-align: center;
+                font-size:50px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #postar{
+                background-color: white;
+                color: black;
+                border: 2px solid #1900ff;
+                margin:auto;
+                margin-top: 100px;
+                text-align: center;
+                display: flex;
+                font-size: 50px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #total{
+                margin-top: 200px;
+            }
+        </style>
+    </head>
+        <body>
+            <form id='total' action="/inicio/" method="get">
+                <button id='postar' name='anuncio' type='submit' value='1'>Postar</button>
+                <br>
+                <br>
+                <button id='verificar' name='anuncio' type="submit" value="0">Verificar</button>
+            </form>
+            <br>
+            <br>
+            <div id='images'></div>
+            
+        </body>
+</html>

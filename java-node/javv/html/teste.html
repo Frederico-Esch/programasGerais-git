@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>No cel agr</title>
+    <style>
+    #inicio{
+        color:#2121e7;
+        text-align:center;
+        font-size:50px;
+        font-family:fantasy;
+    }
+    .fred{
+        margin: auto;
+        display: flex;
+    }
+    body{
+        background-color: #2e2e2e; 
+    }
+    </style>
+    <script>
+        function vai(){
+            fin = document.getElementById('fim').value;
+            window.location = '/' + fin;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="inicio">Bora</h1>
+    <input id='fim' class='fred' type="text"></input>
+    <br/>
+    <input class='fred' type="button" value='aceito' onclick="vai()"/>
+</body>
+
+</html>

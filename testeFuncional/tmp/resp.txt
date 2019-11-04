@@ -1,0 +1,9 @@
+###0.1.6###
+Nome
+fred
+Ano de nascimento:
+2002
+Emprego:
+emp
+Idade:
+17

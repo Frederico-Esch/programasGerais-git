@@ -1,0 +1,6 @@
+st1 = input('digite uma frase: ')
+st2 = input('digite outra frase: ')
+print('o tamnho de %s é %d' %(st1, len(st1)))
+print('o tamnho de %s é %d' %(st2, len(st2)))
+print('os tamanhos são iguais? %r' % (len(st1) == len(st2)))
+print('as strings são iguais? %r' % (st1 == st2))
